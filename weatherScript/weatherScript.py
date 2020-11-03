@@ -50,4 +50,11 @@ class weatherInstance:
 					logging.warning('Data for ' + report_loc + ' ' + report_type + ' missing')
 
 
+if __name__ == '__main__':
+	debug_state = False
+	if sys.argv[1] == '--DEBUG':
+		debug_state = True
+	weather_obj = weatherInstance('config.ini', debug_state, 'data_logs', 'debug_logs')
+	weather_obj.log_data()
+
 

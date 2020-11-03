@@ -5,10 +5,10 @@ description = ""
 authors = ["char-c14 <saha.rajarshi17@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.6.9"
+python = "3.9.0"
+pip = "20.2.3^"
 requests = "2.24.0"
 urllib3 = "1.25.11"
-weatherScript = {dest/to/whl}
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
