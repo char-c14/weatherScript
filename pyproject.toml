@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "weatherScript"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["char-c14 <saha.rajarshi17@gmail.com>"]
 
@@ -16,3 +16,6 @@ pytest = "^5.2"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+weather_get = "weatherscript.weatherScript:run"
