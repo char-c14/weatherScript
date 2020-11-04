@@ -25,10 +25,7 @@ config_file in `.ini` format
 >			1. Area 1
 >			2. Area 2
 >			[temperature]
-> 			1. Area 1
+>			1. Area 1
 
-  
-`
-> weather_obj.log_data()
-`
+> weather_obj.log_data()  
 Final call to object to log data to destination selected

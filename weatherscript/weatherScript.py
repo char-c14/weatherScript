@@ -39,9 +39,9 @@ class weatherInstance:
 				for data_entry in response_dict[report_type]['data']:
 					if data_entry['place'] == report_loc:
 						if not self.debug_state:
-							file_dest = self.data_path+'/' + report_type + '_' + report_loc + '.log'
+							file_dest = self.data_path+'/' + datetime.now().strftime("%Y%m%d") + '_' +report_type + '_' + report_loc + '.log'
 							data_handling = setup_logger(report_loc+report_type, file_dest, logging.INFO)
-							data_handling.info(data_entry)
+							data_handling.info(datetime.now().strftime("%H:%M:%S") + ' : ' + json.dumps(data_entry))
 						else:
 							logging.info(data_entry)
 						data_found = True
